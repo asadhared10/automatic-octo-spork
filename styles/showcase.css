@@ -1,0 +1,124 @@
+/* ==========================================================================
+   Showcase Portal Stylesheet - Device Previewer & Rubric Dashboard
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --hub-bg: #090b10;
+  --hub-card-bg: #121622;
+  --hub-border: #1e2638;
+  --hub-accent-blue: #3b82f6;
+  --hub-accent-purple: #8b5cf6;
+  --hub-accent-emerald: #10b981;
+  --hub-text: #f3f4f6;
+  --hub-muted: #9ca3af;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--hub-bg);
+  color: var(--hub-text);
+  margin: 0;
+  padding: 0;
+}
+
+.hub-navbar {
+  background: rgba(18, 22, 34, 0.95);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--hub-border);
+  padding: 1rem 0;
+}
+
+.hub-brand {
+  font-weight: 800;
+  font-size: 1.4rem;
+  background: linear-gradient(135deg, var(--hub-accent-blue), var(--hub-accent-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.device-btn {
+  background: #1a2030;
+  border: 1px solid var(--hub-border);
+  color: var(--hub-muted);
+  padding: 0.45rem 0.9rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.device-btn:hover, .device-btn.active {
+  background: var(--hub-accent-blue);
+  color: #ffffff;
+  border-color: var(--hub-accent-blue);
+}
+
+.preview-container-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background: #05070a;
+  min-height: 80vh;
+}
+
+.preview-frame-desktop {
+  width: 100%;
+  max-width: 1400px;
+  height: 820px;
+  border: 1px solid var(--hub-border);
+  border-radius: 14px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease;
+  background: #000;
+}
+
+.preview-frame-tablet {
+  width: 768px;
+  height: 820px;
+  border: 12px solid #222;
+  border-radius: 28px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease;
+}
+
+.preview-frame-mobile {
+  width: 395px;
+  height: 740px;
+  border: 14px solid #222;
+  border-radius: 36px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease;
+}
+
+.iframe-view {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: inherit;
+}
+
+.rubric-card {
+  background: var(--hub-card-bg);
+  border: 1px solid var(--hub-border);
+  border-radius: 16px;
+  padding: 1.75rem;
+  height: 100%;
+}
+
+.rubric-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.rubric-item i {
+  color: var(--hub-accent-emerald);
+  font-size: 1.2rem;
+  margin-top: 2px;
+}
