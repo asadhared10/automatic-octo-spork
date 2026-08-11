@@ -3,551 +3,269 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aetheria Expeditions | Luxury Travel & Bespoke Voyages</title>
-  <meta name="description" content="Discover world-class luxury destinations, curated island retreats, and bespoke guided tour packages with Aetheria Expeditions.">
-  
+  <title>Wanderlust Travel Agency - Explore The World</title>
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-  <!-- Custom Travel Stylesheet -->
-  <link rel="stylesheet" href="styles/travel.css">
+  <!-- Custom Student Stylesheet -->
+  <link rel="stylesheet" href="travel-style.css">
 </head>
 <body>
 
-  <!-- ==========================================================================
+  <!-- ==========================================
        NAVBAR COMPONENT
-       ========================================================================== -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-travel" id="travelNavbar">
-      <div class="container">
-        <!-- Agency Name / Logo on Left -->
-        <a class="navbar-brand navbar-brand-travel" href="#home">
-          <i class="bi bi-compass-fill"></i>Aetheria Expeditions
-        </a>
-
-        <!-- Mobile Navbar Toggler -->
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTravelContent" aria-controls="navbarTravelContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Navigation Links on Right -->
-        <div class="collapse navbar-collapse justify-content-end" id="navbarTravelContent">
-          <ul class="navbar-nav align-items-center mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link nav-link-travel active" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-travel" href="#destinations">Destinations</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-travel" href="#tours">Tours</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-travel" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
-              <a href="#contact" class="btn btn-travel rounded-pill">Book Journey</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <!-- ==========================================================================
-         HERO SECTION: SCENIC DESTINATION BACKGROUND & CTA
-         ========================================================================== -->
-    <section id="home" class="hero-travel">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-lg-10 hero-travel-content">
-            <span class="hero-travel-badge"><i class="bi bi-globe-americas me-2"></i>Bespoke World Explorations</span>
-            <h1 class="hero-travel-title">Explore The World's Most Extraordinary Places</h1>
-            <p class="hero-travel-subheading">Immerse yourself in breathtaking destinations, luxury private island villas, and bucket-list cultural expeditions.</p>
-
-            <!-- Prominent Call-To-Action & Search Bar Widget -->
-            <div class="search-widget mt-4">
-              <form class="row g-3 align-items-center" onsubmit="event.preventDefault(); window.location.hash='#destinations';">
-                <div class="col-12 col-md-4">
-                  <div class="input-group">
-                    <span class="input-group-text bg-dark border-secondary text-info"><i class="bi bi-geo-alt-fill"></i></span>
-                    <select class="form-select bg-dark text-white border-secondary">
-                      <option selected>Select Destination...</option>
-                      <option value="santorini">Santorini, Greece</option>
-                      <option value="kyoto">Kyoto, Japan</option>
-                      <option value="alps">Swiss Alps, Switzerland</option>
-                      <option value="maldives">Overwater Maldives</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4">
-                  <div class="input-group">
-                    <span class="input-group-text bg-dark border-secondary text-info"><i class="bi bi-calendar3"></i></span>
-                    <select class="form-select bg-dark text-white border-secondary">
-                      <option selected>Travel Season...</option>
-                      <option value="spring">Spring Blossom (Mar-May)</option>
-                      <option value="summer">Summer Escape (Jun-Aug)</option>
-                      <option value="autumn">Autumn Foliage (Sep-Nov)</option>
-                      <option value="winter">Winter Lodge (Dec-Feb)</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4">
-                  <button type="submit" class="btn btn-travel w-100 py-2 fs-6">
-                    <i class="bi bi-search me-2"></i>Find Destinations
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         DESTINATIONS SECTION: BOOTSTRAP CARDS GRID
-         ========================================================================== -->
-    <section id="destinations" class="py-5 my-4">
-      <div class="container">
-        <!-- Section Header -->
-        <div class="text-center mb-5">
-          <span class="badge bg-info text-dark px-3 py-2 rounded-pill text-uppercase fw-bold mb-2">Featured Escapes</span>
-          <h2 class="display-5 fw-bold text-white">Popular World Destinations</h2>
-          <p class="text-muted col-lg-6 mx-auto">Hand-picked luxury getaways tailored for discerning travelers seeking unforgettable experiences.</p>
-        </div>
-
-        <!-- Grid Layout of Bootstrap Cards -->
-        <div class="row g-4">
-          
-          <!-- Destination Card 1 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card travel-card">
-              <div class="travel-card-img-wrap">
-                <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=800&q=80" class="card-img-top travel-card-img" alt="Santorini Sunset Greece">
-                <span class="travel-card-tag"><i class="bi bi-sun-fill me-1"></i>Mediterranean</span>
-              </div>
-              <div class="card-body travel-card-body">
-                <h3 class="card-title travel-card-title">Santorini Island Cliffside</h3>
-                <div class="travel-card-price">From $2,499 / person</div>
-                <p class="card-text travel-card-text">Experience iconic white-washed architecture, private infinity pool villas, and Aegean sea sunsets in Greece.</p>
-                <div class="mt-auto">
-                  <button class="btn btn-outline-info w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#destModal" data-title="Santorini Island Cliffside" data-location="Greece" data-price="$2,499" data-desc="Includes 7 nights in a luxury cliffside villa, daily champagne breakfast, private catamaran sunset cruise, and wine tasting tour.">
-                    Learn More <i class="bi bi-arrow-right ms-1"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Destination Card 2 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card travel-card">
-              <div class="travel-card-img-wrap">
-                <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80" class="card-img-top travel-card-img" alt="Kyoto Bamboo Forest Japan">
-                <span class="travel-card-tag"><i class="bi bi-flower1 me-1"></i>Cultural Heritage</span>
-              </div>
-              <div class="card-body travel-card-body">
-                <h3 class="card-title travel-card-title">Kyoto Cultural Haven</h3>
-                <div class="travel-card-price">From $3,150 / person</div>
-                <p class="card-text travel-card-text">Wander ancient bamboo groves, majestic golden pagodas, traditional ryokan inns, and tea ceremony gardens.</p>
-                <div class="mt-auto">
-                  <button class="btn btn-outline-info w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#destModal" data-title="Kyoto Cultural Haven" data-location="Japan" data-price="$3,150" data-desc="Includes 8 days private guided temple access, Shinkansen bullet train pass, authentic kaiseki dining, and luxury ryokan stay.">
-                    Learn More <i class="bi bi-arrow-right ms-1"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Destination Card 3 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card travel-card">
-              <div class="travel-card-img-wrap">
-                <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=800&q=80" class="card-img-top travel-card-img" alt="Swiss Alps Mountains">
-                <span class="travel-card-tag"><i class="bi bi-snow me-1"></i>Alpine Adventure</span>
-              </div>
-              <div class="card-body travel-card-body">
-                <h3 class="card-title travel-card-title">Swiss Alps Chalet Retreat</h3>
-                <div class="travel-card-price">From $2,890 / person</div>
-                <p class="card-text travel-card-text">Soak in dramatic snow-capped alpine panoramas, Glacier Express train rides, and heated fireside mountain chalets.</p>
-                <div class="mt-auto">
-                  <button class="btn btn-outline-info w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#destModal" data-title="Swiss Alps Chalet Retreat" data-location="Switzerland" data-price="$2,890" data-desc="Includes 6 nights in Zermatt alpine lodge, Matterhorn cable car VIP pass, ski equipment rental, and gourmet spa access.">
-                    Learn More <i class="bi bi-arrow-right ms-1"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Destination Card 4 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card travel-card">
-              <div class="travel-card-img-wrap">
-                <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=800&q=80" class="card-img-top travel-card-img" alt="Maldives Overwater Bungalow">
-                <span class="travel-card-tag"><i class="bi bi-water me-1"></i>Tropical Sanctuary</span>
-              </div>
-              <div class="card-body travel-card-body">
-                <h3 class="card-title travel-card-title">Maldives Private Atoll</h3>
-                <div class="travel-card-price">From $4,200 / person</div>
-                <p class="card-text travel-card-text">Unwind in glass-bottom overwater ocean bungalows surrounded by turquoise lagoons and pristine coral reefs.</p>
-                <div class="mt-auto">
-                  <button class="btn btn-outline-info w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#destModal" data-title="Maldives Private Atoll" data-location="Maldives" data-price="$4,200" data-desc="Includes seaplane transfers, all-inclusive luxury dining, private snorkeling safari, and underwater spa treatment.">
-                    Learn More <i class="bi bi-arrow-right ms-1"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Destination Card 5 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card travel-card">
-              <div class="travel-card-img-wrap">
-                <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=800&q=80" class="card-img-top travel-card-img" alt="Serengeti Safari Africa">
-                <span class="travel-card-tag"><i class="bi bi-compass me-1"></i>Wild Expedition</span>
-              </div>
-              <div class="card-body travel-card-body">
-                <h3 class="card-title travel-card-title">Serengeti Luxury Safari</h3>
-                <div class="travel-card-price">From $3,750 / person</div>
-                <p class="card-text travel-card-text">Witness the Great Migration up close from five-star tented luxury camps and open-top 4x4 safari vehicles.</p>
-                <div class="mt-auto">
-                  <button class="btn btn-outline-info w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#destModal" data-title="Serengeti Luxury Safari" data-location="Tanzania" data-price="$3,750" data-desc="Includes 7 days guided game drives, hot air balloon flight over Ngorongoro crater, luxury bush dining, and expert ranger guide.">
-                    Learn More <i class="bi bi-arrow-right ms-1"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Destination Card 6 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card travel-card">
-              <div class="travel-card-img-wrap">
-                <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=800&q=80" class="card-img-top travel-card-img" alt="Amalfi Coast Italy">
-                <span class="travel-card-tag"><i class="bi bi-tsunami me-1"></i>Coastal Chic</span>
-              </div>
-              <div class="card-body travel-card-body">
-                <h3 class="card-title travel-card-title">Amalfi Coast & Positano</h3>
-                <div class="travel-card-price">From $2,950 / person</div>
-                <p class="card-text travel-card-text">Cruise dramatic Mediterranean sea cliffs, pastel hillside villages, lemon groves, and chic seaside dining.</p>
-                <div class="mt-auto">
-                  <button class="btn btn-outline-info w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#destModal" data-title="Amalfi Coast & Positano" data-location="Italy" data-price="$2,950" data-desc="Includes 6 nights cliffside boutique hotel in Positano, private yacht charter along Capri, lemon grove tour, and Michelin dinner.">
-                    Learn More <i class="bi bi-arrow-right ms-1"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         TOURS SECTION: BOOTSTRAP ACCORDION COMPONENT
-         ========================================================================== -->
-    <section id="tours" class="tours-section">
-      <div class="container">
-        <!-- Section Header -->
-        <div class="text-center mb-5">
-          <span class="badge bg-warning text-dark px-3 py-2 rounded-pill text-uppercase fw-bold mb-2">Curated Journeys</span>
-          <h2 class="display-5 fw-bold text-white">Signature Tour Packages</h2>
-          <p class="text-muted col-lg-6 mx-auto">Explore details, itineraries, and inclusions for our signature guided tour packages using our interactive accordion viewer.</p>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-12 col-lg-10">
-            <!-- Bootstrap Accordion Component -->
-            <div class="accordion accordion-travel" id="toursAccordion">
-              
-              <!-- Accordion Item 1 -->
-              <div class="accordion-item accordion-item-travel">
-                <h3 class="accordion-header" id="headingOne">
-                  <button class="accordion-button accordion-button-travel" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <i class="bi bi-compass-fill text-info me-3"></i>
-                    Package 1: Grand Mediterranean Odyssey (12 Days)
-                  </button>
-                </h3>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#toursAccordion">
-                  <div class="accordion-body accordion-body-travel">
-                    <div class="row align-items-center g-4">
-                      <div class="col-12 col-md-8">
-                        <h5 class="text-info fw-bold mb-2">Rome &bull; Amalfi Coast &bull; Santorini &bull; Athens</h5>
-                        <p class="text-muted">Set sail on an exclusive 12-day Mediterranean voyage combining private yacht excursions, UNESCO World Heritage archaeological tours, and 5-star seaside boutique stays.</p>
-                        <ul class="list-unstyled text-light small d-flex flex-wrap gap-3 mb-3">
-                          <li><i class="bi bi-check-circle-fill text-info me-1"></i>5-Star Luxury Accommodations</li>
-                          <li><i class="bi bi-check-circle-fill text-info me-1"></i>Private Catamaran Charters</li>
-                          <li><i class="bi bi-check-circle-fill text-info me-1"></i>All Internal Flights Included</li>
-                        </ul>
-                      </div>
-                      <div class="col-12 col-md-4 text-md-end">
-                        <span class="fs-4 text-warning fw-bold d-block mb-2">$5,400 / person</span>
-                        <a href="#contact" class="btn btn-travel rounded-pill btn-sm px-4">View Details & Book</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Accordion Item 2 -->
-              <div class="accordion-item accordion-item-travel">
-                <h3 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button accordion-button-travel collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <i class="bi bi-flower1 text-info me-3"></i>
-                    Package 2: Royal Japan & Cherry Blossom Expedition (10 Days)
-                  </button>
-                </h3>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#toursAccordion">
-                  <div class="accordion-body accordion-body-travel">
-                    <div class="row align-items-center g-4">
-                      <div class="col-12 col-md-8">
-                        <h5 class="text-info fw-bold mb-2">Tokyo &bull; Mount Fuji &bull; Kyoto &bull; Nara</h5>
-                        <p class="text-muted">Immerse yourself in Japan's rich harmony of modern technology and timeless traditions. Experience private tea ceremonies with Geishas, VIP bullet train travel, and thermal Onsen hot springs.</p>
-                        <ul class="list-unstyled text-light small d-flex flex-wrap gap-3 mb-3">
-                          <li><i class="bi bi-check-circle-fill text-info me-1"></i>Private Master Tea Ceremony</li>
-                          <li><i class="bi bi-check-circle-fill text-info me-1"></i>First Class Bullet Train Passes</li>
-                          <li><i class="bi bi-check-circle-fill text-info me-1"></i>Kaiseki Tasting Dinners</li>
-                        </ul>
-                      </div>
-                      <div class="col-12 col-md-4 text-md-end">
-                        <span class="fs-4 text-warning fw-bold d-block mb-2">$4,850 / person</span>
-                        <a href="#contact" class="btn btn-travel rounded-pill btn-sm px-4">View Details & Book</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Accordion Item 3 -->
-              <div class="accordion-item accordion-item-travel">
-                <h3 class="accordion-header" id="headingThree">
-                  <button class="accordion-button accordion-button-travel collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    <i class="bi bi-snow text-info me-3"></i>
-                    Package 3: Northern Lights & Glacier Explorer (7 Days)
-                  </button>
-                </h3>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#toursAccordion">
-                  <div class="accordion-body accordion-body-travel">
-                    <div class="row align-items-center g-4">
-                      <div class="col-12 col-md-8">
-                        <h5 class="text-info fw-bold mb-2">Reykjavik &bull; Golden Circle &bull; Blue Lagoon &bull; Ice Caves</h5>
-                        <p class="text-muted">Track the dancing Aurora Borealis from luxury heated glass igloos, snowmobile across Langjökull Glacier, and soak in geothermal mineral spas under Arctic skies.</p>
-                        <ul class="list-unstyled text-light small d-flex flex-wrap gap-3 mb-3">
-                          <li><i class="bi bi-check-circle-fill text-info me-1"></i>Glass Igloo Accommodation</li>
-                          <li><i class="bi bi-check-circle-fill text-info me-1"></i>Super-Jeep Northern Light Hunt</li>
-                          <li><i class="bi bi-check-circle-fill text-info me-1"></i>Blue Lagoon Retreat Spa</li>
-                        </ul>
-                      </div>
-                      <div class="col-12 col-md-4 text-md-end">
-                        <span class="fs-4 text-warning fw-bold d-block mb-2">$3,990 / person</span>
-                        <a href="#contact" class="btn btn-travel rounded-pill btn-sm px-4">View Details & Book</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Accordion Item 4 -->
-              <div class="accordion-item accordion-item-travel">
-                <h3 class="accordion-header" id="headingFour">
-                  <button class="accordion-button accordion-button-travel collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    <i class="bi bi-tree-fill text-info me-3"></i>
-                    Package 4: Amazon Rainforest & Machu Picchu Wonder (14 Days)
-                  </button>
-                </h3>
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#toursAccordion">
-                  <div class="accordion-body accordion-body-travel">
-                    <div class="row align-items-center g-4">
-                      <div class="col-12 col-md-8">
-                        <h5 class="text-info fw-bold mb-2">Lima &bull; Sacred Valley &bull; Machu Picchu &bull; Amazon Eco-Lodge</h5>
-                        <p class="text-muted">Ascend ancient Inca citadel trails on the Hiram Bingham luxury train, stay in sustainable canopy treehouses, and cruise deep Amazon riverways.</p>
-                        <ul class="list-unstyled text-light small d-flex flex-wrap gap-3 mb-3">
-                          <li><i class="bi bi-check-circle-fill text-info me-1"></i>Belmond Luxury Train Tickets</li>
-                          <li><i class="bi bi-check-circle-fill text-info me-1"></i>Private Expedition Naturalist</li>
-                          <li><i class="bi bi-check-circle-fill text-info me-1"></i>All Permits & Entry Passes</li>
-                        </ul>
-                      </div>
-                      <div class="col-12 col-md-4 text-md-end">
-                        <span class="fs-4 text-warning fw-bold d-block mb-2">$6,200 / person</span>
-                        <a href="#contact" class="btn btn-travel rounded-pill btn-sm px-4">View Details & Book</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         CONTACT FORM SECTION: BOOTSTRAP FORM COMPONENTS
-         ========================================================================== -->
-    <section id="contact" class="py-5">
-      <div class="container">
-        <div class="text-center mb-5">
-          <span class="badge bg-primary text-white px-3 py-2 rounded-pill text-uppercase fw-bold mb-2">Start Planning</span>
-          <h2 class="display-5 fw-bold text-white">Plan Your Custom Voyage</h2>
-          <p class="text-muted col-lg-6 mx-auto">Fill out our inquiry form below to speak with our senior travel specialists.</p>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-12 col-lg-8">
-            <div class="travel-contact-card">
-              <!-- Form utilizing Bootstrap Form Components -->
-              <form id="travel-contact-form" class="needs-validation" novalidate>
-                <div class="row g-4">
-                  <!-- Name Field -->
-                  <div class="col-12 col-md-6">
-                    <label for="travel-name" class="form-label text-white fw-bold">Full Name <span class="text-info">*</span></label>
-                    <div class="input-group">
-                      <span class="input-group-text bg-dark border-secondary text-info"><i class="bi bi-person-fill"></i></span>
-                      <input type="text" class="form-control form-control-travel" id="travel-name" placeholder="e.g. Julian Thorne" required>
-                      <div class="invalid-feedback">Please enter your name.</div>
-                    </div>
-                  </div>
-
-                  <!-- Email Field -->
-                  <div class="col-12 col-md-6">
-                    <label for="travel-email" class="form-label text-white fw-bold">Email Address <span class="text-info">*</span></label>
-                    <div class="input-group">
-                      <span class="input-group-text bg-dark border-secondary text-info"><i class="bi bi-envelope-fill"></i></span>
-                      <input type="email" class="form-control form-control-travel" id="travel-email" placeholder="julian@example.com" required>
-                      <div class="invalid-feedback">Please enter a valid email address.</div>
-                    </div>
-                  </div>
-
-                  <!-- Destination of Interest Dropdown -->
-                  <div class="col-12 col-md-6">
-                    <label for="travel-dest" class="form-label text-white fw-bold">Destination of Interest <span class="text-info">*</span></label>
-                    <div class="input-group">
-                      <span class="input-group-text bg-dark border-secondary text-info"><i class="bi bi-geo-alt-fill"></i></span>
-                      <select class="form-select form-select-travel" id="travel-dest" required>
-                        <option value="" disabled selected>Choose a destination...</option>
-                        <option value="santorini">Santorini, Greece</option>
-                        <option value="kyoto">Kyoto, Japan</option>
-                        <option value="swiss-alps">Swiss Alps, Switzerland</option>
-                        <option value="maldives">Maldives Islands</option>
-                        <option value="serengeti">Serengeti Safari, Tanzania</option>
-                        <option value="amalfi">Amalfi Coast, Italy</option>
-                        <option value="custom">Custom Multi-City Itinerary</option>
-                      </select>
-                      <div class="invalid-feedback">Please select your destination of interest.</div>
-                    </div>
-                  </div>
-
-                  <!-- Traveler Count & Budget -->
-                  <div class="col-12 col-md-6">
-                    <label for="travel-travelers" class="form-label text-white fw-bold">Number of Travelers</label>
-                    <div class="input-group">
-                      <span class="input-group-text bg-dark border-secondary text-info"><i class="bi bi-people-fill"></i></span>
-                      <select class="form-select form-select-travel" id="travel-travelers">
-                        <option value="1">Solo Traveler</option>
-                        <option value="2" selected>Couple (2 Travelers)</option>
-                        <option value="small-group">Small Group (3-5)</option>
-                        <option value="large-group">Private Expedition (6+)</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <!-- Message Field -->
-                  <div class="col-12">
-                    <label for="travel-message" class="form-label text-white fw-bold">Tell Us About Your Dream Voyage <span class="text-info">*</span></label>
-                    <textarea class="form-control form-control-travel" id="travel-message" rows="4" placeholder="Share your estimated travel dates, interests, activities, or special celebrations..." required></textarea>
-                    <div class="invalid-feedback">Please enter details about your travel plans.</div>
-                  </div>
-
-                  <!-- Submit Button -->
-                  <div class="col-12 text-center mt-4">
-                    <button type="submit" class="btn btn-travel btn-lg w-100 py-3 rounded-pill">
-                      <i class="bi bi-send-fill me-2"></i>Submit Travel Inquiry
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ==========================================================================
-       FOOTER COMPONENT
-       ========================================================================== -->
-  <footer class="footer-travel">
+       ========================================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
     <div class="container">
-      <div class="row align-items-center gy-4">
-        <!-- Logo & Agency Name -->
-        <div class="col-12 col-md-4 text-center text-md-start">
-          <a class="navbar-brand navbar-brand-travel fs-4 mb-2 d-inline-block" href="#home">
-            <i class="bi bi-compass-fill"></i>Aetheria Expeditions
-          </a>
-          <p class="small mb-0 text-muted">Curating extraordinary bespoke journeys and luxury escapes across 7 continents.</p>
+      <!-- Agency Name / Logo on Left -->
+      <a class="navbar-brand fw-bold fs-3" href="#home">
+        <i class="bi bi-airplane-engines-fill me-2"></i>Wanderlust Travel
+      </a>
+
+      <!-- Mobile Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#travelNav" aria-controls="travelNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigation Links on Right -->
+      <div class="collapse navbar-collapse justify-content-end" id="travelNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#destinations">Destinations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tours">Tours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section id="home" class="travel-hero text-center text-white d-flex align-items-center justify-content-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-9">
+          <h1 class="display-3 fw-bold mb-3">Discover Your Next Adventure</h1>
+          <p class="fs-4 mb-4">Explore breathtaking tropical beaches, majestic mountain peaks, and unforgettable world tours.</p>
+          <a href="#destinations" class="btn btn-warning btn-lg fw-bold rounded-pill px-4">Explore Destinations</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       DESTINATIONS SECTION (BOOTSTRAP CARDS GRID)
+       ========================================== -->
+  <section id="destinations" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold display-5">Top Destinations</h2>
+        <p class="text-muted">Hand-picked vacation getaways around the globe</p>
+      </div>
+
+      <!-- Grid Layout for Destination Cards -->
+      <div class="row g-4">
+
+        <!-- Destination Card 1 -->
+        <div class="col-12 col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=600&q=80" class="card-img-top travel-card-img" alt="Santorini Greece">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Santorini, Greece</h5>
+              <p class="card-text text-muted">Enjoy famous white-washed buildings, crystal clear blue seas, and stunning Mediterranean sunsets.</p>
+              <div class="mt-auto">
+                <a href="#contact" class="btn btn-outline-primary w-100 rounded-pill">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Destination Card 2 -->
+        <div class="col-12 col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=600&q=80" class="card-img-top travel-card-img" alt="Kyoto Japan">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Kyoto, Japan</h5>
+              <p class="card-text text-muted">Experience historic Buddhist temples, beautiful cherry blossoms, and traditional Japanese culture.</p>
+              <div class="mt-auto">
+                <a href="#contact" class="btn btn-outline-primary w-100 rounded-pill">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Destination Card 3 -->
+        <div class="col-12 col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=600&q=80" class="card-img-top travel-card-img" alt="Swiss Alps">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Swiss Alps, Switzerland</h5>
+              <p class="card-text text-muted">Discover breathtaking snow-capped mountain peaks, luxury ski chalets, and scenic glacier train rides.</p>
+              <div class="mt-auto">
+                <a href="#contact" class="btn btn-outline-primary w-100 rounded-pill">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       TOURS SECTION (BOOTSTRAP ACCORDION)
+       ========================================== -->
+  <section id="tours" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold display-5">Featured Tour Packages</h2>
+        <p class="text-muted">Click below to view details about our guided tours</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10">
+          <!-- Bootstrap Accordion Component -->
+          <div class="accordion shadow-sm" id="tourAccordion">
+            
+            <!-- Accordion Item 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <i class="bi bi-geo-alt-fill text-primary me-2"></i> Tour Package 1: European Capital Explorer (7 Days)
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#tourAccordion">
+                <div class="accordion-body">
+                  <p>Travel through Paris, Brussels, and Amsterdam on a 7-day guided coach tour. Package includes hotel stay, daily breakfast, and museum entry passes.</p>
+                  <a href="#contact" class="btn btn-sm btn-primary rounded-pill">View Details & Book</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion Item 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <i class="bi bi-geo-alt-fill text-primary me-2"></i> Tour Package 2: Tropical Island Escape (5 Days)
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#tourAccordion">
+                <div class="accordion-body">
+                  <p>Relax in an overwater bungalow in the Maldives. Includes roundtrip airport boat transfers, snorkeling gear, and sunset dinner cruises.</p>
+                  <a href="#contact" class="btn btn-sm btn-primary rounded-pill">View Details & Book</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion Item 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <i class="bi bi-geo-alt-fill text-primary me-2"></i> Tour Package 3: African Wildlife Safari (10 Days)
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#tourAccordion">
+                <div class="accordion-body">
+                  <p>Experience guided game drives in Serengeti National Park. Spot lions, elephants, and giraffes while staying in luxury tented lodges.</p>
+                  <a href="#contact" class="btn btn-sm btn-primary rounded-pill">View Details & Book</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CONTACT SECTION: FORM
+       ========================================== -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold display-5">Contact Us</h2>
+        <p class="text-muted">Inquire about trips, customized itineraries, or booking information</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8">
+          <form class="p-4 bg-white rounded-4 shadow-sm" onsubmit="event.preventDefault(); alert('Thank you! Our travel agent will contact you soon.');">
+            
+            <!-- Name Field -->
+            <div class="mb-3">
+              <label for="traveler-name" class="form-label fw-bold">Full Name</label>
+              <input type="text" class="form-control" id="traveler-name" placeholder="Enter your full name" required>
+            </div>
+
+            <!-- Email Field -->
+            <div class="mb-3">
+              <label for="traveler-email" class="form-label fw-bold">Email Address</label>
+              <input type="email" class="form-control" id="traveler-email" placeholder="name@example.com" required>
+            </div>
+
+            <!-- Destination of Interest Dropdown -->
+            <div class="mb-3">
+              <label for="destination-select" class="form-label fw-bold">Destination of Interest</label>
+              <select class="form-select" id="destination-select" required>
+                <option value="" disabled selected>Select a destination...</option>
+                <option value="santorini">Santorini, Greece</option>
+                <option value="kyoto">Kyoto, Japan</option>
+                <option value="swiss-alps">Swiss Alps, Switzerland</option>
+                <option value="maldives">Maldives Islands</option>
+                <option value="safari">African Safari</option>
+              </select>
+            </div>
+
+            <!-- Message Field -->
+            <div class="mb-3">
+              <label for="traveler-message" class="form-label fw-bold">Message / Special Requests</label>
+              <textarea class="form-control" id="traveler-message" rows="4" placeholder="Tell us about your trip dates or travel questions..." required></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary btn-lg px-5 rounded-pill fw-bold">Submit Inquiry</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="bg-primary text-white py-4">
+    <div class="container">
+      <div class="row align-items-center text-center text-md-start">
+        <!-- Copyright Info -->
+        <div class="col-12 col-md-6 mb-3 mb-md-0">
+          <p class="mb-0">&copy; 2026 Wanderlust Travel Agency. All rights reserved.</p>
         </div>
 
         <!-- Social Media Icons -->
-        <div class="col-12 col-md-4 text-center">
-          <div class="d-flex justify-content-center gap-3">
-            <a href="#" class="social-btn-travel" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="social-btn-travel" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="social-btn-travel" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-            <a href="#" class="social-btn-travel" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
-          </div>
-        </div>
-
-        <!-- Copyright Info -->
-        <div class="col-12 col-md-4 text-center text-md-end">
-          <p class="small mb-0">&copy; 2026 Aetheria Expeditions Travel Agency. All Rights Reserved.</p>
-          <small class="text-muted">Built with Bootstrap Components Checkpoint</small>
+        <div class="col-12 col-md-6 text-center text-md-end">
+          <a href="#" class="text-white fs-4 me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white fs-4 me-3"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white fs-4 me-3"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- Destination Modal -->
-  <div class="modal fade" id="destModal" tabindex="-1" aria-labelledby="destModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content bg-dark text-white border-info">
-        <div class="modal-header border-bottom border-secondary">
-          <h5 class="modal-title text-info" id="destModalLabel"><i class="bi bi-globe-americas me-2"></i>Destination Details</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body py-4">
-          <h4 id="destModalTitle" class="fw-bold mb-1">Destination Title</h4>
-          <span id="destModalLocation" class="badge bg-secondary mb-3">Location</span>
-          <p class="fs-5 text-warning fw-bold" id="destModalPrice">$0,000</p>
-          <p class="text-light" id="destModalDesc">Description details go here...</p>
-        </div>
-        <div class="modal-footer border-top border-secondary justify-content-between">
-          <button type="button" class="btn btn-outline-light rounded-pill px-4" data-bs-dismiss="modal">Close</button>
-          <a href="#contact" class="btn btn-travel rounded-pill px-4" data-bs-dismiss="modal">Inquire About This Trip</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- Bootstrap 5 Bundle JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Shared Custom JS -->
-  <script src="js/app.js"></script>
-
-  <script>
-    // Populate Destination Modal dynamically
-    const destModal = document.getElementById('destModal');
-    if (destModal) {
-      destModal.addEventListener('show.bs.modal', function (event) {
-        const button = event.relatedTarget;
-        document.getElementById('destModalTitle').textContent = button.getAttribute('data-title');
-        document.getElementById('destModalLocation').textContent = button.getAttribute('data-location');
-        document.getElementById('destModalPrice').textContent = button.getAttribute('data-price');
-        document.getElementById('destModalDesc').textContent = button.getAttribute('data-desc');
-      });
-    }
-  </script>
 </body>
 </html>
