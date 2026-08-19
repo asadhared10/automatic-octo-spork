@@ -1,18 +1,128 @@
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+/* Custom styles for Wanderlust Travel Agency */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;600&display=swap');
 
-.travel-hero {
-  min-height: 85vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-              url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-}
-
-.travel-card-img {
-  height: 220px;
-  object-fit: cover;
+:root {
+  --primary-travel: #0d6efd;
+  --dark-travel: #0b2545;
+  --accent-gold: #ffc107;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, .navbar-brand, .hero-title {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.tracking-wider {
+  letter-spacing: 2px;
+}
+
+.title-bar {
+  width: 60px;
+  height: 3px;
+  background-color: var(--primary-travel);
+  border-radius: 2px;
+}
+
+/* Navbar */
+.navbar {
+  transition: all 0.3s ease;
+}
+
+.nav-link {
+  font-weight: 500;
+  margin: 0 0.4rem;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--accent-gold) !important;
+}
+
+/* Hero Section */
+.travel-hero {
+  min-height: 85vh;
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat fixed;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(11, 37, 69, 0.65), rgba(11, 37, 69, 0.65));
+}
+
+.hero-title {
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Travel Cards */
+.travel-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.travel-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.12) !important;
+}
+
+.travel-card-img {
+  height: 230px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.travel-card:hover .travel-card-img {
+  transform: scale(1.06);
+}
+
+/* Accordion Custom Styling */
+.accordion-button:not(.collapsed) {
+  background-color: #e7f1ff;
+  color: #0c63e4;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+}
+
+.accordion-button:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Footer Social Icons */
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background: #ffffff;
+  color: var(--primary-travel);
+  transform: translateY(-3px);
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--primary-travel);
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
